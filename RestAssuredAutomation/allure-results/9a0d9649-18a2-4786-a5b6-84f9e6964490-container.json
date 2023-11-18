@@ -1,0 +1,1 @@
+{"uuid":"9a0d9649-18a2-4786-a5b6-84f9e6964490","name":"ReqresRestAPISuite","children":["9be18bda-62b5-4251-a5fa-98d069ab1099"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1700126352203,"stop":1700126352282}],"afters":[],"start":1700126352168,"stop":1700126360722}

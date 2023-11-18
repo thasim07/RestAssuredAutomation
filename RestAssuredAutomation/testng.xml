@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ReqresRestAPISuite">
+	<listeners>
+		<listener class-name="com.reqres.utils.Listeners"></listener>
+	</listeners>
+  <test thread-count="5" name="ReqresRestAPISuite">
+    <classes>
+		<class name="com.reqres.TestCases.TC002_GET_SingleUser"/>
+		 <class name="com.reqres.TestCases.TC001_GET_AllUsers"/>
+      <class name="com.reqres.TestCases.TC003_POST_Userdetail"/> 
+      <class name="com.reqres.TestCases.TC004_PUT_Userdetail"/>
+      <class name="com.reqres.TestCases.TC005_DELETE_Userdetail"/>
+
+     
+    </classes>
+  </test> <!-- ReqresRestAPISuite -->
+</suite> <!-- ReqresRestAPISuite -->
