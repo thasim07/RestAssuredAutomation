@@ -1,15 +1,20 @@
 pipeline {
     agent any
-    stages {
-        stage('Demo') {
+    stages{
+    stage('Generate Allure Report') {
             steps {
-                echo 'Hello World'
+                script {
+                    ws('C:/Users/mmohamedkm/git/RestAssuredAutomation/RestAssuredAutomation') {
+                        allure([
+                            includeProperties: false,
+                            jdk: '',
+                            properties: [],
+                            reportBuildPolicy: 'ALWAYS',
+                            results: [[path: 'allure-results']]
+                        ])
+                    }
+                }
             }
-        }
-    }
-    post {
-        always {
-            echo 'I will always say Hello again!'
         }
     }
 }
