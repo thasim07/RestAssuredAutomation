@@ -32,6 +32,7 @@ public class TC005_DELETE_Userdetail extends BaseClass{
 
 	@Test(priority=3,description = "Validating the StatusLine")
 	void checkStatusLine() {
+		
 		validateStatusLine(response, "HTTP/1.1 204 No Content");
 	}
 
