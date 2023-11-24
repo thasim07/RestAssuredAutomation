@@ -15362,3 +15362,939 @@ The Status Line is: HTTP/1.1 200 OK
 2023-11-19 17:34:16 INFO  ReqresRestAPI:111- *********************Checking StatusLine****************************
 2023-11-19 17:34:16 INFO  ReqresRestAPI:113- The Status Line is: HTTP/1.1 204 No Content
 2023-11-19 17:34:16 INFO  ReqresRestAPI:44- **************************Finished TC005_DELETE_Userdetail**********************
+2023-11-20 14:14:31 INFO  ReqresRestAPI:14- **********************TC001_GET_AllUsers**********************************
+2023-11-20 14:14:33 INFO  ReqresRestAPI:89- *********************Validate Response Body****************************
+2023-11-20 14:14:33 INFO  ReqresRestAPI:91- The Response body: {
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2023-11-20 14:14:33 INFO  ReqresRestAPI:100- *********************Checking Response code****************************
+2023-11-20 14:14:33 INFO  ReqresRestAPI:102- The Status code is:200
+2023-11-20 14:14:33 INFO  ReqresRestAPI:111- *********************Checking StatusLine****************************
+2023-11-20 14:14:33 INFO  ReqresRestAPI:113- The Status Line is: HTTP/1.1 200 OK
+2023-11-20 14:14:33 INFO  ReqresRestAPI:122- *********************Checking ResponseTime****************************
+2023-11-20 14:14:33 INFO  ReqresRestAPI:124- The response time is:1071
+2023-11-20 14:14:33 INFO  ReqresRestAPI:136- *********************Checking content type****************************
+2023-11-20 14:14:33 INFO  ReqresRestAPI:138- Content type is:application/json; charset=utf-8
+2023-11-20 14:14:33 INFO  ReqresRestAPI:47- **************************Finished TC001_GET_AllUsers**********************
+2023-11-21 10:39:17 INFO  ReqresRestAPI:15- **********************TC001_GET_SingleUser**********************************
+2023-11-21 10:39:19 INFO  ReqresRestAPI:89- *********************Validate Response Body****************************
+2023-11-21 10:39:19 INFO  ReqresRestAPI:91- The Response body: {
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2023-11-21 10:39:19 INFO  ReqresRestAPI:100- *********************Checking Response code****************************
+2023-11-21 10:39:19 INFO  ReqresRestAPI:102- The Status code is:200
+2023-11-21 10:39:19 INFO  ReqresRestAPI:111- *********************Checking StatusLine****************************
+2023-11-21 10:39:19 INFO  ReqresRestAPI:113- The Status Line is: HTTP/1.1 200 OK
+2023-11-21 10:39:19 INFO  ReqresRestAPI:122- *********************Checking ResponseTime****************************
+2023-11-21 10:39:19 INFO  ReqresRestAPI:124- The response time is:1285
+2023-11-21 10:39:19 INFO  ReqresRestAPI:136- *********************Checking content type****************************
+2023-11-21 10:39:19 INFO  ReqresRestAPI:138- Content type is:application/json; charset=utf-8
+2023-11-21 10:39:20 INFO  ReqresRestAPI:48- **************************Finished TC001_GET_SingleUser**********************
+2023-11-21 10:39:20 INFO  ReqresRestAPI:14- **********************TC001_GET_AllUsers**********************************
+2023-11-21 10:39:20 INFO  ReqresRestAPI:89- *********************Validate Response Body****************************
+2023-11-21 10:39:20 INFO  ReqresRestAPI:91- The Response body: {
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2023-11-21 10:39:20 INFO  ReqresRestAPI:100- *********************Checking Response code****************************
+2023-11-21 10:39:20 INFO  ReqresRestAPI:102- The Status code is:200
+2023-11-21 10:39:20 INFO  ReqresRestAPI:111- *********************Checking StatusLine****************************
+2023-11-21 10:39:20 INFO  ReqresRestAPI:113- The Status Line is: HTTP/1.1 200 OK
+2023-11-21 10:39:20 INFO  ReqresRestAPI:122- *********************Checking ResponseTime****************************
+2023-11-21 10:39:20 INFO  ReqresRestAPI:124- The response time is:341
+2023-11-21 10:39:20 INFO  ReqresRestAPI:136- *********************Checking content type****************************
+2023-11-21 10:39:20 INFO  ReqresRestAPI:138- Content type is:application/json; charset=utf-8
+2023-11-21 10:39:20 INFO  ReqresRestAPI:46- **************************Finished TC001_GET_AllUsers**********************
+2023-11-21 10:39:21 INFO  ReqresRestAPI:89- *********************Validate Response Body****************************
+2023-11-21 10:39:21 INFO  ReqresRestAPI:91- The Response body: {
+    "name": "ajithceH",
+    "job": "TesterIArzf",
+    "id": "52",
+    "createdAt": "2023-11-21T05:09:19.422Z"
+}
+2023-11-21 10:39:21 INFO  ReqresRestAPI:147- *********************Checking Response Body****************************
+2023-11-21 10:39:21 INFO  ReqresRestAPI:149- The Response body: {
+    "name": "ajithceH",
+    "job": "TesterIArzf",
+    "id": "52",
+    "createdAt": "2023-11-21T05:09:19.422Z"
+}
+2023-11-21 10:39:21 INFO  ReqresRestAPI:100- *********************Checking Response code****************************
+2023-11-21 10:39:21 INFO  ReqresRestAPI:102- The Status code is:201
+2023-11-21 10:39:21 INFO  ReqresRestAPI:111- *********************Checking StatusLine****************************
+2023-11-21 10:39:21 INFO  ReqresRestAPI:113- The Status Line is: HTTP/1.1 201 Created
+2023-11-21 10:39:21 INFO  ReqresRestAPI:136- *********************Checking content type****************************
+2023-11-21 10:39:21 INFO  ReqresRestAPI:138- Content type is:application/json; charset=utf-8
+2023-11-21 10:39:21 INFO  ReqresRestAPI:59- **************************Finished TC003_POST_Userdetail**********************
+2023-11-21 10:39:21 INFO  ReqresRestAPI:147- *********************Checking Response Body****************************
+2023-11-21 10:39:21 INFO  ReqresRestAPI:149- The Response body: {
+    "name": "ajithBnv",
+    "job": "TesterbuJbS",
+    "updatedAt": "2023-11-21T05:09:20.082Z"
+}
+2023-11-21 10:39:21 INFO  ReqresRestAPI:100- *********************Checking Response code****************************
+2023-11-21 10:39:21 INFO  ReqresRestAPI:102- The Status code is:200
+2023-11-21 10:39:21 INFO  ReqresRestAPI:111- *********************Checking StatusLine****************************
+2023-11-21 10:39:21 INFO  ReqresRestAPI:113- The Status Line is: HTTP/1.1 200 OK
+2023-11-21 10:39:21 INFO  ReqresRestAPI:136- *********************Checking content type****************************
+2023-11-21 10:39:21 INFO  ReqresRestAPI:138- Content type is:application/json; charset=utf-8
+2023-11-21 10:39:21 INFO  ReqresRestAPI:51- **************************Finished TC004_PUT_Userdetail**********************
+2023-11-21 10:39:23 INFO  ReqresRestAPI:89- *********************Validate Response Body****************************
+2023-11-21 10:39:23 INFO  ReqresRestAPI:91- The Response body: 
+2023-11-21 10:39:23 INFO  ReqresRestAPI:100- *********************Checking Response code****************************
+2023-11-21 10:39:23 INFO  ReqresRestAPI:102- The Status code is:204
+2023-11-21 10:39:23 INFO  ReqresRestAPI:111- *********************Checking StatusLine****************************
+2023-11-21 10:39:23 INFO  ReqresRestAPI:113- The Status Line is: HTTP/1.1 204 No Content
+2023-11-21 10:39:23 INFO  ReqresRestAPI:44- **************************Finished TC005_DELETE_Userdetail**********************
+2023-11-21 12:37:38 INFO  ReqresRestAPI:15- **********************TC001_GET_SingleUser**********************************
+2023-11-21 12:37:40 INFO  ReqresRestAPI:89- *********************Validate Response Body****************************
+2023-11-21 12:37:40 INFO  ReqresRestAPI:91- The Response body: {
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2023-11-21 12:37:40 INFO  ReqresRestAPI:100- *********************Checking Response code****************************
+2023-11-21 12:37:40 INFO  ReqresRestAPI:102- The Status code is:200
+2023-11-21 12:37:40 INFO  ReqresRestAPI:111- *********************Checking StatusLine****************************
+2023-11-21 12:37:40 INFO  ReqresRestAPI:113- The Status Line is: HTTP/1.1 200 OK
+2023-11-21 12:37:40 INFO  ReqresRestAPI:122- *********************Checking ResponseTime****************************
+2023-11-21 12:37:40 INFO  ReqresRestAPI:124- The response time is:1286
+2023-11-21 12:37:40 INFO  ReqresRestAPI:136- *********************Checking content type****************************
+2023-11-21 12:37:40 INFO  ReqresRestAPI:138- Content type is:application/json; charset=utf-8
+2023-11-21 12:37:40 INFO  ReqresRestAPI:48- **************************Finished TC001_GET_SingleUser**********************
+2023-11-21 12:37:40 INFO  ReqresRestAPI:14- **********************TC001_GET_AllUsers**********************************
+2023-11-21 12:37:44 INFO  ReqresRestAPI:89- *********************Validate Response Body****************************
+2023-11-21 12:37:44 INFO  ReqresRestAPI:91- The Response body: {
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2023-11-21 12:37:44 INFO  ReqresRestAPI:100- *********************Checking Response code****************************
+2023-11-21 12:37:44 INFO  ReqresRestAPI:102- The Status code is:200
+2023-11-21 12:37:44 INFO  ReqresRestAPI:111- *********************Checking StatusLine****************************
+2023-11-21 12:37:44 INFO  ReqresRestAPI:113- The Status Line is: HTTP/1.1 200 OK
+2023-11-21 12:37:44 INFO  ReqresRestAPI:122- *********************Checking ResponseTime****************************
+2023-11-21 12:37:44 INFO  ReqresRestAPI:124- The response time is:3348
+2023-11-21 12:37:44 WARN  ReqresRestAPI:126- Response time is greater than 2000
+2023-11-21 12:37:44 INFO  ReqresRestAPI:136- *********************Checking content type****************************
+2023-11-21 12:37:44 INFO  ReqresRestAPI:138- Content type is:application/json; charset=utf-8
+2023-11-21 12:37:44 INFO  ReqresRestAPI:46- **************************Finished TC001_GET_AllUsers**********************
+2023-11-21 12:37:44 INFO  ReqresRestAPI:89- *********************Validate Response Body****************************
+2023-11-21 12:37:44 INFO  ReqresRestAPI:91- The Response body: {
+    "name": "ajithhqk",
+    "job": "TestertwjnS",
+    "id": "100",
+    "createdAt": "2023-11-21T07:07:44.701Z"
+}
+2023-11-21 12:37:44 INFO  ReqresRestAPI:147- *********************Checking Response Body****************************
+2023-11-21 12:37:44 INFO  ReqresRestAPI:149- The Response body: {
+    "name": "ajithhqk",
+    "job": "TestertwjnS",
+    "id": "100",
+    "createdAt": "2023-11-21T07:07:44.701Z"
+}
+2023-11-21 12:37:44 INFO  ReqresRestAPI:100- *********************Checking Response code****************************
+2023-11-21 12:37:44 INFO  ReqresRestAPI:102- The Status code is:201
+2023-11-21 12:37:44 INFO  ReqresRestAPI:111- *********************Checking StatusLine****************************
+2023-11-21 12:37:44 INFO  ReqresRestAPI:113- The Status Line is: HTTP/1.1 201 Created
+2023-11-21 12:37:44 INFO  ReqresRestAPI:136- *********************Checking content type****************************
+2023-11-21 12:37:44 INFO  ReqresRestAPI:138- Content type is:application/json; charset=utf-8
+2023-11-21 12:37:44 INFO  ReqresRestAPI:59- **************************Finished TC003_POST_Userdetail**********************
+2023-11-21 12:37:45 INFO  ReqresRestAPI:147- *********************Checking Response Body****************************
+2023-11-21 12:37:45 INFO  ReqresRestAPI:149- The Response body: {
+    "name": "ajithIJu",
+    "job": "TestercYbML",
+    "updatedAt": "2023-11-21T07:07:45.388Z"
+}
+2023-11-21 12:37:45 INFO  ReqresRestAPI:100- *********************Checking Response code****************************
+2023-11-21 12:37:45 INFO  ReqresRestAPI:102- The Status code is:200
+2023-11-21 12:37:45 INFO  ReqresRestAPI:111- *********************Checking StatusLine****************************
+2023-11-21 12:37:45 INFO  ReqresRestAPI:113- The Status Line is: HTTP/1.1 200 OK
+2023-11-21 12:37:45 INFO  ReqresRestAPI:136- *********************Checking content type****************************
+2023-11-21 12:37:45 INFO  ReqresRestAPI:138- Content type is:application/json; charset=utf-8
+2023-11-21 12:37:45 INFO  ReqresRestAPI:51- **************************Finished TC004_PUT_Userdetail**********************
+2023-11-21 12:37:48 INFO  ReqresRestAPI:89- *********************Validate Response Body****************************
+2023-11-21 12:37:48 INFO  ReqresRestAPI:91- The Response body: 
+2023-11-21 12:37:48 INFO  ReqresRestAPI:100- *********************Checking Response code****************************
+2023-11-21 12:37:48 INFO  ReqresRestAPI:102- The Status code is:204
+2023-11-21 12:37:48 INFO  ReqresRestAPI:111- *********************Checking StatusLine****************************
+2023-11-21 12:37:48 INFO  ReqresRestAPI:113- The Status Line is: HTTP/1.1 204 No Content
+2023-11-21 12:37:48 INFO  ReqresRestAPI:44- **************************Finished TC005_DELETE_Userdetail**********************
+2023-11-22 12:52:52 INFO  ReqresRestAPI:15- **********************TC001_GET_SingleUser**********************************
+2023-11-22 12:52:52 INFO  ReqresRestAPI:14- **********************TC001_GET_AllUsers**********************************
+2023-11-22 12:54:21 INFO  ReqresRestAPI:15- **********************TC001_GET_SingleUser**********************************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:119- *********************Validate Response Body****************************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:121- The Response body: {
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2023-11-22 12:54:23 INFO  ReqresRestAPI:130- *********************Checking Response code****************************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:132- The Status code is:200
+2023-11-22 12:54:23 INFO  ReqresRestAPI:141- *********************Checking StatusLine****************************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:143- The Status Line is: HTTP/1.1 200 OK
+2023-11-22 12:54:23 INFO  ReqresRestAPI:152- *********************Checking ResponseTime****************************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:154- The response time is:782
+2023-11-22 12:54:23 INFO  ReqresRestAPI:166- *********************Checking content type****************************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:168- Content type is:application/json; charset=utf-8
+2023-11-22 12:54:23 INFO  ReqresRestAPI:48- **************************Finished TC001_GET_SingleUser**********************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:14- **********************TC001_GET_AllUsers**********************************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:119- *********************Validate Response Body****************************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:121- The Response body: {
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2023-11-22 12:54:23 INFO  ReqresRestAPI:130- *********************Checking Response code****************************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:132- The Status code is:200
+2023-11-22 12:54:23 INFO  ReqresRestAPI:141- *********************Checking StatusLine****************************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:143- The Status Line is: HTTP/1.1 200 OK
+2023-11-22 12:54:23 INFO  ReqresRestAPI:152- *********************Checking ResponseTime****************************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:154- The response time is:229
+2023-11-22 12:54:23 INFO  ReqresRestAPI:166- *********************Checking content type****************************
+2023-11-22 12:54:23 INFO  ReqresRestAPI:168- Content type is:application/json; charset=utf-8
+2023-11-22 12:54:23 INFO  ReqresRestAPI:46- **************************Finished TC001_GET_AllUsers**********************
+2023-11-22 12:54:24 INFO  ReqresRestAPI:119- *********************Validate Response Body****************************
+2023-11-22 12:54:24 INFO  ReqresRestAPI:121- The Response body: {
+    "name": "ajithBWl",
+    "job": "TesterJoCrA",
+    "id": "142",
+    "createdAt": "2023-11-22T07:24:24.655Z"
+}
+2023-11-22 12:54:24 INFO  ReqresRestAPI:177- *********************Checking Response Body****************************
+2023-11-22 12:54:24 INFO  ReqresRestAPI:179- The Response body: {
+    "name": "ajithBWl",
+    "job": "TesterJoCrA",
+    "id": "142",
+    "createdAt": "2023-11-22T07:24:24.655Z"
+}
+2023-11-22 12:54:24 INFO  ReqresRestAPI:130- *********************Checking Response code****************************
+2023-11-22 12:54:24 INFO  ReqresRestAPI:132- The Status code is:201
+2023-11-22 12:54:24 INFO  ReqresRestAPI:141- *********************Checking StatusLine****************************
+2023-11-22 12:54:24 INFO  ReqresRestAPI:143- The Status Line is: HTTP/1.1 201 Created
+2023-11-22 12:54:24 INFO  ReqresRestAPI:166- *********************Checking content type****************************
+2023-11-22 12:54:24 INFO  ReqresRestAPI:168- Content type is:application/json; charset=utf-8
+2023-11-22 12:54:24 INFO  ReqresRestAPI:59- **************************Finished TC003_POST_Userdetail**********************
+2023-11-22 12:54:25 INFO  ReqresRestAPI:177- *********************Checking Response Body****************************
+2023-11-22 12:54:25 INFO  ReqresRestAPI:179- The Response body: {
+    "name": "ajithxxe",
+    "job": "TesterXPgEm",
+    "updatedAt": "2023-11-22T07:24:25.293Z"
+}
+2023-11-22 12:54:25 INFO  ReqresRestAPI:130- *********************Checking Response code****************************
+2023-11-22 12:54:25 INFO  ReqresRestAPI:132- The Status code is:200
+2023-11-22 12:54:25 INFO  ReqresRestAPI:141- *********************Checking StatusLine****************************
+2023-11-22 12:54:25 INFO  ReqresRestAPI:143- The Status Line is: HTTP/1.1 200 OK
+2023-11-22 12:54:25 INFO  ReqresRestAPI:166- *********************Checking content type****************************
+2023-11-22 12:54:25 INFO  ReqresRestAPI:168- Content type is:application/json; charset=utf-8
+2023-11-22 12:54:25 INFO  ReqresRestAPI:51- **************************Finished TC004_PUT_Userdetail**********************
+2023-11-22 12:54:26 INFO  ReqresRestAPI:119- *********************Validate Response Body****************************
+2023-11-22 12:54:26 INFO  ReqresRestAPI:121- The Response body: 
+2023-11-22 12:54:26 INFO  ReqresRestAPI:130- *********************Checking Response code****************************
+2023-11-22 12:54:26 INFO  ReqresRestAPI:132- The Status code is:204
+2023-11-22 12:54:26 INFO  ReqresRestAPI:141- *********************Checking StatusLine****************************
+2023-11-22 12:54:26 INFO  ReqresRestAPI:143- The Status Line is: HTTP/1.1 204 No Content
+2023-11-22 12:54:26 INFO  ReqresRestAPI:44- **************************Finished TC005_DELETE_Userdetail**********************
+2023-11-23 12:24:00 INFO  ReqresRestAPI:15- **********************TC001_GET_SingleUser**********************************
+2023-11-23 12:24:03 INFO  ReqresRestAPI:129- *********************Validate Response Body****************************
+2023-11-23 12:24:03 INFO  ReqresRestAPI:131- The Response body: {
+    "message": "Error Occured! Page Not found, contact rstapi2example@gmail.com"
+}
+2023-11-23 12:24:03 INFO  ReqresRestAPI:140- *********************Checking Response code****************************
+2023-11-23 12:24:03 INFO  ReqresRestAPI:142- The Status code is:404
+2023-11-23 12:24:03 INFO  ReqresRestAPI:152- *********************Checking StatusLine****************************
+2023-11-23 12:24:03 INFO  ReqresRestAPI:154- The Status Line is: HTTP/1.1 404 Not Found
+2023-11-23 12:24:03 INFO  ReqresRestAPI:164- *********************Checking ResponseTime****************************
+2023-11-23 12:24:03 INFO  ReqresRestAPI:166- The response time is:1703
+2023-11-23 12:24:03 INFO  ReqresRestAPI:178- *********************Checking content type****************************
+2023-11-23 12:24:03 INFO  ReqresRestAPI:180- Content type is:application/json
+2023-11-23 12:24:03 INFO  ReqresRestAPI:48- **************************Finished TC001_GET_SingleUser**********************
+2023-11-23 12:24:03 INFO  ReqresRestAPI:14- **********************TC001_GET_AllUsers**********************************
+2023-11-23 12:24:04 INFO  ReqresRestAPI:129- *********************Validate Response Body****************************
+2023-11-23 12:24:04 INFO  ReqresRestAPI:131- The Response body: {
+    "message": "Error Occured! Page Not found, contact rstapi2example@gmail.com"
+}
+2023-11-23 12:24:04 INFO  ReqresRestAPI:140- *********************Checking Response code****************************
+2023-11-23 12:24:04 INFO  ReqresRestAPI:142- The Status code is:404
+2023-11-23 12:24:04 INFO  ReqresRestAPI:152- *********************Checking StatusLine****************************
+2023-11-23 12:24:04 INFO  ReqresRestAPI:154- The Status Line is: HTTP/1.1 404 Not Found
+2023-11-23 12:24:04 INFO  ReqresRestAPI:164- *********************Checking ResponseTime****************************
+2023-11-23 12:24:04 INFO  ReqresRestAPI:166- The response time is:888
+2023-11-23 12:24:04 INFO  ReqresRestAPI:178- *********************Checking content type****************************
+2023-11-23 12:24:04 INFO  ReqresRestAPI:180- Content type is:application/json
+2023-11-23 12:24:04 INFO  ReqresRestAPI:46- **************************Finished TC001_GET_AllUsers**********************
+2023-11-23 12:24:05 INFO  ReqresRestAPI:129- *********************Validate Response Body****************************
+2023-11-23 12:24:05 INFO  ReqresRestAPI:131- The Response body: <html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="robots" content="noindex,nofollow,noarchive"/>
+    <title>An Error Occurred: Method Not Allowed</title>
+    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+.container { margin: 30px; max-width: 600px; }
+h1 { color: #dc3545; font-size: 24px; }
+h2 { font-size: 18px; }</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Oops! An Error Occurred</h1>
+      <h2>The server returned a "405 Method Not Allowed".</h2>
+      <p>
+        Something is broken. Please let us know what you were doing when this error occurred.
+        We will fix it as soon as possible. Sorry for any inconvenience caused.
+    </p>
+    </div>
+  </body>
+</html>
+2023-11-23 12:24:05 INFO  ReqresRestAPI:190- *********************Checking Response Body****************************
+2023-11-23 12:24:05 INFO  ReqresRestAPI:192- The Response body: <html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="robots" content="noindex,nofollow,noarchive"/>
+    <title>An Error Occurred: Method Not Allowed</title>
+    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+.container { margin: 30px; max-width: 600px; }
+h1 { color: #dc3545; font-size: 24px; }
+h2 { font-size: 18px; }</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Oops! An Error Occurred</h1>
+      <h2>The server returned a "405 Method Not Allowed".</h2>
+      <p>
+        Something is broken. Please let us know what you were doing when this error occurred.
+        We will fix it as soon as possible. Sorry for any inconvenience caused.
+    </p>
+    </div>
+  </body>
+</html>
+2023-11-23 12:24:05 INFO  ReqresRestAPI:140- *********************Checking Response code****************************
+2023-11-23 12:24:05 INFO  ReqresRestAPI:142- The Status code is:405
+2023-11-23 12:24:05 INFO  ReqresRestAPI:152- *********************Checking StatusLine****************************
+2023-11-23 12:24:05 INFO  ReqresRestAPI:154- The Status Line is: HTTP/1.1 405 Method Not Allowed
+2023-11-23 12:24:05 INFO  ReqresRestAPI:178- *********************Checking content type****************************
+2023-11-23 12:24:05 INFO  ReqresRestAPI:180- Content type is:text/html; charset=UTF-8
+2023-11-23 12:24:05 INFO  ReqresRestAPI:59- **************************Finished TC003_POST_Userdetail**********************
+2023-11-23 12:24:06 INFO  ReqresRestAPI:190- *********************Checking Response Body****************************
+2023-11-23 12:24:06 INFO  ReqresRestAPI:192- The Response body: <html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="robots" content="noindex,nofollow,noarchive"/>
+    <title>An Error Occurred: Method Not Allowed</title>
+    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+.container { margin: 30px; max-width: 600px; }
+h1 { color: #dc3545; font-size: 24px; }
+h2 { font-size: 18px; }</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Oops! An Error Occurred</h1>
+      <h2>The server returned a "405 Method Not Allowed".</h2>
+      <p>
+        Something is broken. Please let us know what you were doing when this error occurred.
+        We will fix it as soon as possible. Sorry for any inconvenience caused.
+    </p>
+    </div>
+  </body>
+</html>
+2023-11-23 12:24:06 INFO  ReqresRestAPI:140- *********************Checking Response code****************************
+2023-11-23 12:24:06 INFO  ReqresRestAPI:142- The Status code is:405
+2023-11-23 12:24:06 INFO  ReqresRestAPI:152- *********************Checking StatusLine****************************
+2023-11-23 12:24:06 INFO  ReqresRestAPI:154- The Status Line is: HTTP/1.1 405 Method Not Allowed
+2023-11-23 12:24:06 INFO  ReqresRestAPI:178- *********************Checking content type****************************
+2023-11-23 12:24:06 INFO  ReqresRestAPI:180- Content type is:text/html; charset=UTF-8
+2023-11-23 12:24:06 INFO  ReqresRestAPI:51- **************************Finished TC004_PUT_Userdetail**********************
+2023-11-23 12:24:09 INFO  ReqresRestAPI:129- *********************Validate Response Body****************************
+2023-11-23 12:24:09 INFO  ReqresRestAPI:131- The Response body: <html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="robots" content="noindex,nofollow,noarchive"/>
+    <title>An Error Occurred: Method Not Allowed</title>
+    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+.container { margin: 30px; max-width: 600px; }
+h1 { color: #dc3545; font-size: 24px; }
+h2 { font-size: 18px; }</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Oops! An Error Occurred</h1>
+      <h2>The server returned a "405 Method Not Allowed".</h2>
+      <p>
+        Something is broken. Please let us know what you were doing when this error occurred.
+        We will fix it as soon as possible. Sorry for any inconvenience caused.
+    </p>
+    </div>
+  </body>
+</html>
+2023-11-23 12:24:09 INFO  ReqresRestAPI:140- *********************Checking Response code****************************
+2023-11-23 12:24:09 INFO  ReqresRestAPI:142- The Status code is:405
+2023-11-23 12:24:09 INFO  ReqresRestAPI:152- *********************Checking StatusLine****************************
+2023-11-23 12:24:09 INFO  ReqresRestAPI:154- The Status Line is: HTTP/1.1 405 Method Not Allowed
+2023-11-23 12:24:09 INFO  ReqresRestAPI:44- **************************Finished TC005_DELETE_Userdetail**********************
+2023-11-23 12:26:33 INFO  ReqresRestAPI:15- **********************TC001_GET_SingleUser**********************************
+2023-11-23 12:26:37 INFO  ReqresRestAPI:129- *********************Validate Response Body****************************
+2023-11-23 12:26:37 INFO  ReqresRestAPI:131- The Response body: {
+    "message": "Error Occured! Page Not found, contact rstapi2example@gmail.com"
+}
+2023-11-23 12:26:37 INFO  ReqresRestAPI:140- *********************Checking Response code****************************
+2023-11-23 12:26:37 INFO  ReqresRestAPI:142- The Status code is:404
+2023-11-23 12:26:37 INFO  ReqresRestAPI:152- *********************Checking StatusLine****************************
+2023-11-23 12:26:37 INFO  ReqresRestAPI:154- The Status Line is: HTTP/1.1 404 Not Found
+2023-11-23 12:26:37 INFO  ReqresRestAPI:164- *********************Checking ResponseTime****************************
+2023-11-23 12:26:37 INFO  ReqresRestAPI:166- The response time is:3233
+2023-11-23 12:26:37 WARN  ReqresRestAPI:168- Response time is greater than 2000
+2023-11-23 12:26:37 INFO  ReqresRestAPI:178- *********************Checking content type****************************
+2023-11-23 12:26:37 INFO  ReqresRestAPI:180- Content type is:application/json
+2023-11-23 12:26:37 INFO  ReqresRestAPI:48- **************************Finished TC001_GET_SingleUser**********************
+2023-11-23 12:26:37 INFO  ReqresRestAPI:14- **********************TC001_GET_AllUsers**********************************
+2023-11-23 12:26:38 INFO  ReqresRestAPI:129- *********************Validate Response Body****************************
+2023-11-23 12:26:38 INFO  ReqresRestAPI:131- The Response body: {
+    "message": "Error Occured! Page Not found, contact rstapi2example@gmail.com"
+}
+2023-11-23 12:26:38 INFO  ReqresRestAPI:140- *********************Checking Response code****************************
+2023-11-23 12:26:38 INFO  ReqresRestAPI:142- The Status code is:404
+2023-11-23 12:26:38 INFO  ReqresRestAPI:152- *********************Checking StatusLine****************************
+2023-11-23 12:26:38 INFO  ReqresRestAPI:154- The Status Line is: HTTP/1.1 404 Not Found
+2023-11-23 12:26:38 INFO  ReqresRestAPI:164- *********************Checking ResponseTime****************************
+2023-11-23 12:26:38 INFO  ReqresRestAPI:166- The response time is:1065
+2023-11-23 12:26:38 INFO  ReqresRestAPI:178- *********************Checking content type****************************
+2023-11-23 12:26:38 INFO  ReqresRestAPI:180- Content type is:application/json
+2023-11-23 12:26:38 INFO  ReqresRestAPI:46- **************************Finished TC001_GET_AllUsers**********************
+2023-11-23 12:26:39 INFO  ReqresRestAPI:129- *********************Validate Response Body****************************
+2023-11-23 12:26:39 INFO  ReqresRestAPI:131- The Response body: <html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="robots" content="noindex,nofollow,noarchive"/>
+    <title>An Error Occurred: Method Not Allowed</title>
+    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+.container { margin: 30px; max-width: 600px; }
+h1 { color: #dc3545; font-size: 24px; }
+h2 { font-size: 18px; }</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Oops! An Error Occurred</h1>
+      <h2>The server returned a "405 Method Not Allowed".</h2>
+      <p>
+        Something is broken. Please let us know what you were doing when this error occurred.
+        We will fix it as soon as possible. Sorry for any inconvenience caused.
+    </p>
+    </div>
+  </body>
+</html>
+2023-11-23 12:26:39 INFO  ReqresRestAPI:190- *********************Checking Response Body****************************
+2023-11-23 12:26:39 INFO  ReqresRestAPI:192- The Response body: <html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="robots" content="noindex,nofollow,noarchive"/>
+    <title>An Error Occurred: Method Not Allowed</title>
+    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+.container { margin: 30px; max-width: 600px; }
+h1 { color: #dc3545; font-size: 24px; }
+h2 { font-size: 18px; }</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Oops! An Error Occurred</h1>
+      <h2>The server returned a "405 Method Not Allowed".</h2>
+      <p>
+        Something is broken. Please let us know what you were doing when this error occurred.
+        We will fix it as soon as possible. Sorry for any inconvenience caused.
+    </p>
+    </div>
+  </body>
+</html>
+2023-11-23 12:26:39 INFO  ReqresRestAPI:140- *********************Checking Response code****************************
+2023-11-23 12:26:39 INFO  ReqresRestAPI:142- The Status code is:405
+2023-11-23 12:26:39 INFO  ReqresRestAPI:152- *********************Checking StatusLine****************************
+2023-11-23 12:26:39 INFO  ReqresRestAPI:154- The Status Line is: HTTP/1.1 405 Method Not Allowed
+2023-11-23 12:26:39 INFO  ReqresRestAPI:178- *********************Checking content type****************************
+2023-11-23 12:26:39 INFO  ReqresRestAPI:180- Content type is:text/html; charset=UTF-8
+2023-11-23 12:26:39 INFO  ReqresRestAPI:59- **************************Finished TC003_POST_Userdetail**********************
+2023-11-23 12:26:40 INFO  ReqresRestAPI:190- *********************Checking Response Body****************************
+2023-11-23 12:26:40 INFO  ReqresRestAPI:192- The Response body: <html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="robots" content="noindex,nofollow,noarchive"/>
+    <title>An Error Occurred: Method Not Allowed</title>
+    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+.container { margin: 30px; max-width: 600px; }
+h1 { color: #dc3545; font-size: 24px; }
+h2 { font-size: 18px; }</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Oops! An Error Occurred</h1>
+      <h2>The server returned a "405 Method Not Allowed".</h2>
+      <p>
+        Something is broken. Please let us know what you were doing when this error occurred.
+        We will fix it as soon as possible. Sorry for any inconvenience caused.
+    </p>
+    </div>
+  </body>
+</html>
+2023-11-23 12:26:40 INFO  ReqresRestAPI:140- *********************Checking Response code****************************
+2023-11-23 12:26:40 INFO  ReqresRestAPI:142- The Status code is:405
+2023-11-23 12:26:40 INFO  ReqresRestAPI:152- *********************Checking StatusLine****************************
+2023-11-23 12:26:40 INFO  ReqresRestAPI:154- The Status Line is: HTTP/1.1 405 Method Not Allowed
+2023-11-23 12:26:40 INFO  ReqresRestAPI:178- *********************Checking content type****************************
+2023-11-23 12:26:40 INFO  ReqresRestAPI:180- Content type is:text/html; charset=UTF-8
+2023-11-23 12:26:40 INFO  ReqresRestAPI:51- **************************Finished TC004_PUT_Userdetail**********************
+2023-11-23 12:26:43 INFO  ReqresRestAPI:129- *********************Validate Response Body****************************
+2023-11-23 12:26:43 INFO  ReqresRestAPI:131- The Response body: <html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="robots" content="noindex,nofollow,noarchive"/>
+    <title>An Error Occurred: Method Not Allowed</title>
+    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+.container { margin: 30px; max-width: 600px; }
+h1 { color: #dc3545; font-size: 24px; }
+h2 { font-size: 18px; }</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Oops! An Error Occurred</h1>
+      <h2>The server returned a "405 Method Not Allowed".</h2>
+      <p>
+        Something is broken. Please let us know what you were doing when this error occurred.
+        We will fix it as soon as possible. Sorry for any inconvenience caused.
+    </p>
+    </div>
+  </body>
+</html>
+2023-11-23 12:26:43 INFO  ReqresRestAPI:140- *********************Checking Response code****************************
+2023-11-23 12:26:43 INFO  ReqresRestAPI:142- The Status code is:405
+2023-11-23 12:26:43 INFO  ReqresRestAPI:152- *********************Checking StatusLine****************************
+2023-11-23 12:26:43 INFO  ReqresRestAPI:154- The Status Line is: HTTP/1.1 405 Method Not Allowed
+2023-11-23 12:26:43 INFO  ReqresRestAPI:44- **************************Finished TC005_DELETE_Userdetail**********************
+2023-11-23 20:47:39 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 20:53:49 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 20:53:49 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 20:54:53 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 20:54:53 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 20:57:48 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 20:57:48 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 21:00:16 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 21:00:16 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 21:01:06 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 21:01:06 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 21:03:43 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 21:03:43 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 21:04:09 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 21:04:09 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 21:06:01 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 21:06:01 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 21:08:59 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 21:08:59 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 21:10:05 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 21:10:06 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 21:21:56 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 21:21:56 INFO  ReqresRestAPI:132- The Response body: {
+    "authenticated": true
+}
+2023-11-23 21:21:56 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 21:21:56 INFO  ReqresRestAPI:143- The Status code is:200
+2023-11-23 21:22:24 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 21:22:24 INFO  ReqresRestAPI:132- The Response body: {
+    "authenticated": true
+}
+2023-11-23 21:22:24 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 21:22:24 INFO  ReqresRestAPI:143- The Status code is:200
+2023-11-23 21:31:58 INFO  ReqresRestAPI:129- *********************Validate Response Body****************************
+2023-11-23 21:31:58 INFO  ReqresRestAPI:131- The Response body: {
+    "authenticated": true
+}
+2023-11-23 21:31:58 INFO  ReqresRestAPI:140- *********************Checking Response code****************************
+2023-11-23 21:31:58 INFO  ReqresRestAPI:142- The Status code is:200
+2023-11-23 21:36:32 INFO  ReqresRestAPI:129- *********************Validate Response Body****************************
+2023-11-23 21:36:32 INFO  ReqresRestAPI:140- *********************Checking Response code****************************
+2023-11-23 21:38:07 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 21:38:07 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 21:38:58 INFO  ReqresRestAPI:130- *********************Validate Response Body****************************
+2023-11-23 21:38:58 INFO  ReqresRestAPI:132- The Response body: {
+    "authenticated": true
+}
+2023-11-23 21:38:58 INFO  ReqresRestAPI:141- *********************Checking Response code****************************
+2023-11-23 21:38:58 INFO  ReqresRestAPI:143- The Status code is:200
+2023-11-23 21:41:14 INFO  ReqresRestAPI:127- *********************Validate Response Body****************************
+2023-11-23 21:41:15 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-23 21:41:33 INFO  ReqresRestAPI:127- *********************Validate Response Body****************************
+2023-11-23 21:41:33 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-23 21:41:43 INFO  ReqresRestAPI:15- **********************TC001_GET_SingleUser**********************************
+2023-11-23 21:41:46 INFO  ReqresRestAPI:127- *********************Validate Response Body****************************
+2023-11-23 21:41:46 INFO  ReqresRestAPI:129- The Response body: {
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2023-11-23 21:41:46 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-23 21:41:46 INFO  ReqresRestAPI:140- The Status code is:200
+2023-11-23 21:41:46 INFO  ReqresRestAPI:150- *********************Checking StatusLine****************************
+2023-11-23 21:41:46 INFO  ReqresRestAPI:152- The Status Line is: HTTP/1.1 200 OK
+2023-11-23 21:41:46 INFO  ReqresRestAPI:162- *********************Checking ResponseTime****************************
+2023-11-23 21:41:46 INFO  ReqresRestAPI:164- The response time is:1323
+2023-11-23 21:41:46 INFO  ReqresRestAPI:176- *********************Checking content type****************************
+2023-11-23 21:41:46 INFO  ReqresRestAPI:178- Content type is:application/json; charset=utf-8
+2023-11-23 21:41:46 INFO  ReqresRestAPI:48- **************************Finished TC001_GET_SingleUser**********************
+2023-11-23 21:41:46 INFO  ReqresRestAPI:14- **********************TC001_GET_AllUsers**********************************
+2023-11-23 21:41:47 INFO  ReqresRestAPI:127- *********************Validate Response Body****************************
+2023-11-23 21:41:47 INFO  ReqresRestAPI:129- The Response body: {
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2023-11-23 21:41:47 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-23 21:41:47 INFO  ReqresRestAPI:140- The Status code is:200
+2023-11-23 21:41:47 INFO  ReqresRestAPI:150- *********************Checking StatusLine****************************
+2023-11-23 21:41:47 INFO  ReqresRestAPI:152- The Status Line is: HTTP/1.1 200 OK
+2023-11-23 21:41:47 INFO  ReqresRestAPI:162- *********************Checking ResponseTime****************************
+2023-11-23 21:41:47 INFO  ReqresRestAPI:164- The response time is:610
+2023-11-23 21:41:47 INFO  ReqresRestAPI:176- *********************Checking content type****************************
+2023-11-23 21:41:47 INFO  ReqresRestAPI:178- Content type is:application/json; charset=utf-8
+2023-11-23 21:41:47 INFO  ReqresRestAPI:46- **************************Finished TC001_GET_AllUsers**********************
+2023-11-23 21:41:48 INFO  ReqresRestAPI:127- *********************Validate Response Body****************************
+2023-11-23 21:41:48 INFO  ReqresRestAPI:129- The Response body: {
+    "name": "ajithwxB",
+    "job": "TesterktEWw",
+    "id": "558",
+    "createdAt": "2023-11-23T16:11:47.954Z"
+}
+2023-11-23 21:41:48 INFO  ReqresRestAPI:188- *********************Checking Response Body****************************
+2023-11-23 21:41:48 INFO  ReqresRestAPI:190- The Response body: {
+    "name": "ajithwxB",
+    "job": "TesterktEWw",
+    "id": "558",
+    "createdAt": "2023-11-23T16:11:47.954Z"
+}
+2023-11-23 21:41:48 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-23 21:41:48 INFO  ReqresRestAPI:140- The Status code is:201
+2023-11-23 21:41:48 INFO  ReqresRestAPI:150- *********************Checking StatusLine****************************
+2023-11-23 21:41:48 INFO  ReqresRestAPI:152- The Status Line is: HTTP/1.1 201 Created
+2023-11-23 21:41:48 INFO  ReqresRestAPI:176- *********************Checking content type****************************
+2023-11-23 21:41:48 INFO  ReqresRestAPI:178- Content type is:application/json; charset=utf-8
+2023-11-23 21:41:48 INFO  ReqresRestAPI:59- **************************Finished TC003_POST_Userdetail**********************
+2023-11-23 21:41:49 INFO  ReqresRestAPI:188- *********************Checking Response Body****************************
+2023-11-23 21:41:49 INFO  ReqresRestAPI:190- The Response body: {
+    "name": "ajithfvY",
+    "job": "TesterTZmVz",
+    "updatedAt": "2023-11-23T16:11:49.085Z"
+}
+2023-11-23 21:41:49 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-23 21:41:49 INFO  ReqresRestAPI:140- The Status code is:200
+2023-11-23 21:41:49 INFO  ReqresRestAPI:150- *********************Checking StatusLine****************************
+2023-11-23 21:41:49 INFO  ReqresRestAPI:152- The Status Line is: HTTP/1.1 200 OK
+2023-11-23 21:41:49 INFO  ReqresRestAPI:176- *********************Checking content type****************************
+2023-11-23 21:41:49 INFO  ReqresRestAPI:178- Content type is:application/json; charset=utf-8
+2023-11-23 21:41:49 INFO  ReqresRestAPI:51- **************************Finished TC004_PUT_Userdetail**********************
+2023-11-23 21:41:51 INFO  ReqresRestAPI:127- *********************Validate Response Body****************************
+2023-11-23 21:41:51 INFO  ReqresRestAPI:129- The Response body: 
+2023-11-23 21:41:51 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-23 21:41:51 INFO  ReqresRestAPI:140- The Status code is:204
+2023-11-23 21:41:51 INFO  ReqresRestAPI:150- *********************Checking StatusLine****************************
+2023-11-23 21:41:51 INFO  ReqresRestAPI:152- The Status Line is: HTTP/1.1 204 No Content
+2023-11-23 21:41:51 INFO  ReqresRestAPI:50- **************************Finished TC005_DELETE_Userdetail**********************
+2023-11-24 10:18:26 INFO  ReqresRestAPI:127- *********************Validate Response Body****************************
+2023-11-24 10:18:26 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-24 10:19:10 INFO  ReqresRestAPI:127- *********************Validate Response Body****************************
+2023-11-24 10:19:10 INFO  ReqresRestAPI:129- The Response body: 
+2023-11-24 10:19:10 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-24 10:19:10 INFO  ReqresRestAPI:140- The Status code is:404
+2023-11-24 10:20:12 INFO  ReqresRestAPI:127- *********************Validate Response Body****************************
+2023-11-24 10:20:12 INFO  ReqresRestAPI:129- The Response body: 
+2023-11-24 10:20:12 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-24 10:20:12 INFO  ReqresRestAPI:140- The Status code is:404
+2023-11-24 10:23:44 INFO  ReqresRestAPI:127- *********************Validate Response Body****************************
+2023-11-24 10:23:44 INFO  ReqresRestAPI:129- The Response body: 
+2023-11-24 10:23:44 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-24 10:23:44 INFO  ReqresRestAPI:140- The Status code is:404
+2023-11-24 10:23:44 INFO  ReqresRestAPI:176- *********************Checking content type****************************
+2023-11-24 10:23:44 INFO  ReqresRestAPI:178- Content type is:null
+2023-11-24 10:25:43 INFO  ReqresRestAPI:127- *********************Validate Response Body****************************
+2023-11-24 10:25:43 INFO  ReqresRestAPI:129- The Response body: 
+2023-11-24 10:25:43 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-24 10:25:43 INFO  ReqresRestAPI:140- The Status code is:404
+2023-11-24 10:26:18 INFO  ReqresRestAPI:127- *********************Validate Response Body****************************
+2023-11-24 10:26:18 INFO  ReqresRestAPI:129- The Response body: 
+2023-11-24 10:26:18 INFO  ReqresRestAPI:138- *********************Checking Response code****************************
+2023-11-24 10:26:18 INFO  ReqresRestAPI:140- The Status code is:404

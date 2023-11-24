@@ -4,6 +4,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.reqres.Base.BaseClass;
+
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
 import io.restassured.path.json.JsonPath;
 
 public class TC005_DELETE_Userdetail extends BaseClass{
@@ -12,7 +15,7 @@ public class TC005_DELETE_Userdetail extends BaseClass{
 	public void deleteUserDetail() throws InterruptedException {
 
 		setBaseURI();
-		includeHeader("Authorization","Bearer "+prop.getProperty("Authtoken"));
+		includeHeader("Authorization","Bearer "+prop.getProperty("Accesstoken"));
 		response=requestType("GET",prop.getProperty("userpath"));
 
 		//By using JsonPath, i am getting the first employee and deleting that user data

@@ -13,8 +13,7 @@ public class TC001_GET_AllUsers extends BaseClass{
 	public static void getAllUsersData() throws InterruptedException {
 		logger.info("**********************TC001_GET_AllUsers**********************************");
 		setBaseURI();
-		response=requestType("GET",prop.getProperty("userpath"));	
-		
+		response=requestType("GET",prop.getProperty("userpath"));		
 	}
 
 	@Test(priority=1,description = "Validating the ResponseBody")

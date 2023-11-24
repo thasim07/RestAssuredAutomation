@@ -22,11 +22,11 @@ public class TC003_POST_Userdetail extends BaseClass{
 		requestParam.put("name", username);
 		requestParam.put("job", userjob);
 
-		includeHeader("Authorization","Bearer "+prop.getProperty("Authtoken"));
+		includeHeader("Authorization","Bearer "+prop.getProperty("Accesstoken"));
 		includeHeader("Content-Type","application/json");
 		httpRequest.body(requestParam.toString());
 		response=requestType("POST",prop.getProperty("userpath"));
-	
+		
 	}
 
 	@Test(priority=3,description = "Validating the StatusCode")

@@ -31,13 +31,17 @@ public class BaseClass {
 
 	@BeforeSuite
 
-	public void setup() throws IOException {
+	//In this method, i have implemented logger and properties file
+	public void setup() {
 
-		logger=Logger.getLogger("ReqresRestAPI");
-		PropertyConfigurator.configure("Log4j.properties");
-		logger.setLevel(Level.DEBUG);
-
-		//to load the properties
+		try {
+			logger=Logger.getLogger("ReqresRestAPI");
+			PropertyConfigurator.configure("Log4j.properties");
+			logger.setLevel(Level.DEBUG);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 		prop = new Properties();
 		try {
 			input = new FileInputStream("config.properties");
@@ -46,45 +50,78 @@ public class BaseClass {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void setBaseURI() {
-		RestAssured.baseURI = prop.getProperty("baseURI");
-		httpRequest = RestAssured.given();
+		try {
+			RestAssured.baseURI = prop.getProperty("baseURI");
+			httpRequest = RestAssured.given();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void baseAuth(String username, String password) {
+
+		try {
+			RestAssured.baseURI = prop.getProperty("baseURI");
+			httpRequest=RestAssured.given().auth().preemptive().basic(username, password);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	public static void digestAuth(String username,String password) {
+
+		try {
+			httpRequest=RestAssured.given().auth().digest(username, password);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 	public static void includeHeader(String key, String value) {
-		httpRequest=RestAssured.given().header(key, value);
 
+		try {
+			httpRequest=RestAssured.given().header(key, value);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 
 	public static Response requestType(String type, String resource) {
 
-		switch(type){
+		try {
+			switch(type){
 
-		case "GET": 
-			response=httpRequest.get(resource);
-			break;
+			case "GET": 
+				response=httpRequest.get(resource);
+				break;
 
-		case "POST": 
-			response=httpRequest.post(resource);
-			break;
+			case "POST": 
+				response=httpRequest.post(resource);
+				break;
 
-		case "PUT": 
-			response=httpRequest.put(resource);
-			break;
+			case "PUT": 
+				response=httpRequest.put(resource);
+				break;
 
-		case "DELETE": 
-			response=httpRequest.delete(resource);
-			break;
+			case "DELETE": 
+				response=httpRequest.delete(resource);
+				break;
 
-		default:
-			break;
+			default:
+				System.out.println("HTTP request is invalid");
+				break;
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-
 		return response;
 	}
 
-	public void validateResponseBody(Response response) {
+	public static void validateResponseBody(Response response) {
 		try {
 			logger.info("*********************Validate Response Body****************************");
 			String responseBody = response.getBody().asPrettyString();
@@ -95,7 +132,7 @@ public class BaseClass {
 		}
 	}
 
-	public void validateStatusCode(Response response, int expectedStatusCode) {
+	public static void validateStatusCode(Response response, int expectedStatusCode) {
 		try {
 			logger.info("*********************Checking Response code****************************");
 			int statusCode = response.getStatusCode();
@@ -108,6 +145,7 @@ public class BaseClass {
 
 	public void validateStatusLine(Response response, String expectedStatusLine) {
 		try {
+
 			logger.info("*********************Checking StatusLine****************************");
 			String statusLine = response.getStatusLine();
 			logger.info("The Status Line is: " + statusLine);
@@ -119,6 +157,7 @@ public class BaseClass {
 
 	public void validateResponseTime(Response response, long maxResponseTime) {
 		try {
+
 			logger.info("*********************Checking ResponseTime****************************");
 			long responseTime = response.getTime();
 			logger.info("The response time is:" + responseTime);
@@ -142,14 +181,17 @@ public class BaseClass {
 		}
 	}
 
-	public void checkResponseBody(Response response, String name, String job) {
+	public static void checkResponseBody(Response response, String name, String job) {
 		try {
+
 			logger.info("*********************Checking Response Body****************************");
 			String responseBody = response.getBody().asPrettyString();
 			logger.info("The Response body: " + responseBody);
 			Assert.assertEquals(responseBody.contains(name),true);
 			Assert.assertEquals(responseBody.contains(job),true);
-		} catch (Exception e) {
+
+		} 
+		catch (Exception e) {
 			Assert.fail("Test failed due to an exception: " + e.getMessage());
 		}
 	}

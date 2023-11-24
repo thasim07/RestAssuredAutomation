@@ -19,7 +19,7 @@ public class TC004_PUT_Userdetail extends BaseClass{
 		JSONObject requestParam=new JSONObject();
 		requestParam.put("name", username);
 		requestParam.put("job", userjob);
-
+		includeHeader("Authorization","Bearer "+prop.getProperty("Accesstoken"));
 		includeHeader("Content-Type","application/json");
 		httpRequest.body(requestParam.toString());
 		response=requestType("PUT",prop.getProperty("updateuser"));
