@@ -11,6 +11,8 @@
       <class name="com.reqres.TestCases.TC003_POST_Userdetail"/> 
       <class name="com.reqres.TestCases.TC004_PUT_Userdetail"/>
       <class name="com.reqres.TestCases.TC005_DELETE_Userdetail"/>
+      <class name="com.reqres.TestCases.Authentication"/>
+      
 
      
     </classes>

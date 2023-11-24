@@ -5,8 +5,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.reqres.Base.BaseClass;
 
-import io.restassured.http.Header;
-import io.restassured.http.Headers;
 import io.restassured.path.json.JsonPath;
 
 public class TC005_DELETE_Userdetail extends BaseClass{
