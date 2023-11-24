@@ -13,7 +13,7 @@ pipeline {
 		stage('Generate Allure Report') {
 			steps {
 				script {
-					ws('C:/Users/mmohamedkm/git/RestAssuredAutomation/RestAssuredAutomation') {
+					ws('C:/Users/mmohamedkm/git/RestAssuredAutomation/RestAssuredAutomation/target') {
 						allure([
 						        includeProperties: false,
 						        jdk: '',

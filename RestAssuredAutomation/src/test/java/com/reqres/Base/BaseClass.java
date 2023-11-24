@@ -36,7 +36,7 @@ public class BaseClass {
 
 		try {
 			logger=Logger.getLogger("ReqresRestAPI");
-			PropertyConfigurator.configure("Log4j.properties");
+			PropertyConfigurator.configure("src/test/resources/Log4j.properties");
 			logger.setLevel(Level.DEBUG);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -44,7 +44,7 @@ public class BaseClass {
 		
 		prop = new Properties();
 		try {
-			input = new FileInputStream("config.properties");
+			input = new FileInputStream("src/test/resources/config.properties");
 			prop.load(input);
 		} catch (IOException e) {
 			e.printStackTrace();
