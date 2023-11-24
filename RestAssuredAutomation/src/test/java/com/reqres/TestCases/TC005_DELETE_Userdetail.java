@@ -39,7 +39,6 @@ public class TC005_DELETE_Userdetail extends BaseClass{
 	void validateResponseBody() {
 		validateResponseBody(response);
 	}
-
 	@AfterClass
 	void teardown() {
 		logger.info("**************************Finished TC005_DELETE_Userdetail**********************");
