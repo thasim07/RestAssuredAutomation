@@ -63,7 +63,7 @@ public class BaseClass {
 	public static void baseAuth(String username, String password) {
 
 		try {
-			httpRequest=RestAssured.given().auth().preemptive().basic(username, password);
+			httpRequest=RestAssured.given().auth().preemptive().basic(username, password).log().all();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
