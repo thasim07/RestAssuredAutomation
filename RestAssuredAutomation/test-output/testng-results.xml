@@ -1,159 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-24T16:21:44 IST" name="ReqresRestAPISuite" finished-at="2023-11-24T16:21:52 IST" duration-ms="7629">
+  <suite started-at="2023-11-27T11:08:06 IST" name="Default suite" finished-at="2023-11-27T11:08:09 IST" duration-ms="2830">
     <groups>
     </groups>
-    <test started-at="2023-11-24T16:21:44 IST" name="ReqresRestAPISuite" finished-at="2023-11-24T16:21:52 IST" duration-ms="7629">
+    <test started-at="2023-11-27T11:08:06 IST" name="Default test" finished-at="2023-11-27T11:08:09 IST" duration-ms="2830">
       <class name="com.reqres.TestCases.TC003_POST_Userdetail">
-        <test-method is-config="true" signature="addNewUser()[pri:0, instance:com.reqres.TestCases.TC003_POST_Userdetail@1a38ba58]" started-at="2023-11-24T16:21:47 IST" name="addNewUser" finished-at="2023-11-24T16:21:48 IST" duration-ms="483" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.reqres.TestCases.TC003_POST_Userdetail@6b85300e]" started-at="2023-11-27T11:08:06 IST" name="setup" finished-at="2023-11-27T11:08:06 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="addNewUser()[pri:0, instance:com.reqres.TestCases.TC003_POST_Userdetail@6b85300e]" started-at="2023-11-27T11:08:06 IST" name="addNewUser" finished-at="2023-11-27T11:08:08 IST" duration-ms="2551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewUser -->
-        <test-method signature="validateResponseBody()[pri:1, instance:com.reqres.TestCases.TC003_POST_Userdetail@1a38ba58]" started-at="2023-11-24T16:21:48 IST" name="validateResponseBody" description="Validating the ResponseBody" finished-at="2023-11-24T16:21:48 IST" duration-ms="3" status="PASS">
+        <test-method signature="validateResponseBody()[pri:1, instance:com.reqres.TestCases.TC003_POST_Userdetail@6b85300e]" started-at="2023-11-27T11:08:08 IST" name="validateResponseBody" description="Validating the ResponseBody" finished-at="2023-11-27T11:08:09 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateResponseBody -->
-        <test-method signature="checkResponseBody()[pri:2, instance:com.reqres.TestCases.TC003_POST_Userdetail@1a38ba58]" started-at="2023-11-24T16:21:48 IST" name="checkResponseBody" description="Checking ResponseBody" finished-at="2023-11-24T16:21:48 IST" duration-ms="4" status="PASS">
+        <test-method signature="checkResponseBody()[pri:2, instance:com.reqres.TestCases.TC003_POST_Userdetail@6b85300e]" started-at="2023-11-27T11:08:09 IST" name="checkResponseBody" description="Checking ResponseBody" finished-at="2023-11-27T11:08:09 IST" duration-ms="14" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to an exception: Schema to use cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: Schema to use cannot be null
+at org.testng.Assert.fail(Assert.java:111)
+at com.reqres.Base.BaseClass.checkResponseBody(BaseClass.java:196)
+at com.reqres.TestCases.TC003_POST_Userdetail.checkResponseBody(TC003_POST_Userdetail.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkResponseBody -->
-        <test-method signature="checkStatusCode()[pri:3, instance:com.reqres.TestCases.TC003_POST_Userdetail@1a38ba58]" started-at="2023-11-24T16:21:48 IST" name="checkStatusCode" description="Validating the StatusCode" finished-at="2023-11-24T16:21:48 IST" duration-ms="4" status="PASS">
+        <test-method signature="checkStatusCode()[pri:3, instance:com.reqres.TestCases.TC003_POST_Userdetail@6b85300e]" started-at="2023-11-27T11:08:09 IST" name="checkStatusCode" description="Validating the StatusCode" finished-at="2023-11-27T11:08:09 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatusCode -->
-        <test-method signature="checkStatusLine()[pri:4, instance:com.reqres.TestCases.TC003_POST_Userdetail@1a38ba58]" started-at="2023-11-24T16:21:48 IST" name="checkStatusLine" description="Validating the StatusLine" finished-at="2023-11-24T16:21:48 IST" duration-ms="4" status="PASS">
+        <test-method signature="checkStatusLine()[pri:4, instance:com.reqres.TestCases.TC003_POST_Userdetail@6b85300e]" started-at="2023-11-27T11:08:09 IST" name="checkStatusLine" description="Validating the StatusLine" finished-at="2023-11-27T11:08:09 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatusLine -->
-        <test-method signature="checkContentType()[pri:5, instance:com.reqres.TestCases.TC003_POST_Userdetail@1a38ba58]" started-at="2023-11-24T16:21:48 IST" name="checkContentType" description="Validating the ContentType" finished-at="2023-11-24T16:21:48 IST" duration-ms="3" status="PASS">
+        <test-method signature="checkContentType()[pri:5, instance:com.reqres.TestCases.TC003_POST_Userdetail@6b85300e]" started-at="2023-11-27T11:08:09 IST" name="checkContentType" description="Validating the ContentType" finished-at="2023-11-27T11:08:09 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkContentType -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.reqres.TestCases.TC003_POST_Userdetail@1a38ba58]" started-at="2023-11-24T16:21:48 IST" name="teardown" finished-at="2023-11-24T16:21:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.reqres.TestCases.TC003_POST_Userdetail@6b85300e]" started-at="2023-11-27T11:08:09 IST" name="teardown" finished-at="2023-11-27T11:08:09 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.reqres.TestCases.TC003_POST_Userdetail -->
-      <class name="com.reqres.TestCases.TC005_DELETE_Userdetail">
-        <test-method is-config="true" signature="deleteUserDetail()[pri:0, instance:com.reqres.TestCases.TC005_DELETE_Userdetail@6058e535]" started-at="2023-11-24T16:21:48 IST" name="deleteUserDetail" finished-at="2023-11-24T16:21:50 IST" duration-ms="1506" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteUserDetail -->
-        <test-method signature="validateResponseBody()[pri:1, instance:com.reqres.TestCases.TC005_DELETE_Userdetail@6058e535]" started-at="2023-11-24T16:21:50 IST" name="validateResponseBody" description="Validating the ResponseBody" finished-at="2023-11-24T16:21:50 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateResponseBody -->
-        <test-method signature="checkStatusCode()[pri:2, instance:com.reqres.TestCases.TC005_DELETE_Userdetail@6058e535]" started-at="2023-11-24T16:21:50 IST" name="checkStatusCode" description="Validating the StatusCode" finished-at="2023-11-24T16:21:50 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatusCode -->
-        <test-method signature="checkStatusLine()[pri:3, instance:com.reqres.TestCases.TC005_DELETE_Userdetail@6058e535]" started-at="2023-11-24T16:21:50 IST" name="checkStatusLine" description="Validating the StatusLine" finished-at="2023-11-24T16:21:50 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatusLine -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.reqres.TestCases.TC005_DELETE_Userdetail@6058e535]" started-at="2023-11-24T16:21:50 IST" name="teardown" finished-at="2023-11-24T16:21:50 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.reqres.TestCases.TC005_DELETE_Userdetail -->
-      <class name="com.reqres.TestCases.TC002_GET_SingleUser">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.reqres.TestCases.TC002_GET_SingleUser@3abd581e]" started-at="2023-11-24T16:21:44 IST" name="setup" finished-at="2023-11-24T16:21:44 IST" duration-ms="86" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="getSingleUsersData()[pri:0, instance:com.reqres.TestCases.TC002_GET_SingleUser@3abd581e]" started-at="2023-11-24T16:21:44 IST" name="getSingleUsersData" finished-at="2023-11-24T16:21:47 IST" duration-ms="2655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSingleUsersData -->
-        <test-method signature="checkResponseBody()[pri:1, instance:com.reqres.TestCases.TC002_GET_SingleUser@3abd581e]" started-at="2023-11-24T16:21:47 IST" name="checkResponseBody" description="Validating the ResponseBody" finished-at="2023-11-24T16:21:47 IST" duration-ms="85" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkResponseBody -->
-        <test-method signature="checkStatusCode()[pri:2, instance:com.reqres.TestCases.TC002_GET_SingleUser@3abd581e]" started-at="2023-11-24T16:21:47 IST" name="checkStatusCode" description="Validating the StatusCode" finished-at="2023-11-24T16:21:47 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatusCode -->
-        <test-method signature="checkStatusLine()[pri:3, instance:com.reqres.TestCases.TC002_GET_SingleUser@3abd581e]" started-at="2023-11-24T16:21:47 IST" name="checkStatusLine" description="Validating the StatusLine" finished-at="2023-11-24T16:21:47 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatusLine -->
-        <test-method signature="checkResponseTime()[pri:4, instance:com.reqres.TestCases.TC002_GET_SingleUser@3abd581e]" started-at="2023-11-24T16:21:47 IST" name="checkResponseTime" description="Validating the ResponseTime" finished-at="2023-11-24T16:21:47 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkResponseTime -->
-        <test-method signature="checkContentType()[pri:5, instance:com.reqres.TestCases.TC002_GET_SingleUser@3abd581e]" started-at="2023-11-24T16:21:47 IST" name="checkContentType" description="Validating the ContentType" finished-at="2023-11-24T16:21:47 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkContentType -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.reqres.TestCases.TC002_GET_SingleUser@3abd581e]" started-at="2023-11-24T16:21:47 IST" name="teardown" finished-at="2023-11-24T16:21:47 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.reqres.TestCases.TC002_GET_SingleUser -->
-      <class name="com.reqres.TestCases.TC004_PUT_Userdetail">
-        <test-method is-config="true" signature="updateUserDetail()[pri:0, instance:com.reqres.TestCases.TC004_PUT_Userdetail@3ad394e6]" started-at="2023-11-24T16:21:48 IST" name="updateUserDetail" finished-at="2023-11-24T16:21:48 IST" duration-ms="578" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUserDetail -->
-        <test-method signature="checkResponseBody()[pri:1, instance:com.reqres.TestCases.TC004_PUT_Userdetail@3ad394e6]" started-at="2023-11-24T16:21:48 IST" name="checkResponseBody" description="Checking ResponseBody" finished-at="2023-11-24T16:21:48 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkResponseBody -->
-        <test-method signature="checkStatusCode()[pri:2, instance:com.reqres.TestCases.TC004_PUT_Userdetail@3ad394e6]" started-at="2023-11-24T16:21:48 IST" name="checkStatusCode" description="Validating the StatusCode" finished-at="2023-11-24T16:21:48 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatusCode -->
-        <test-method signature="checkStatusLine()[pri:3, instance:com.reqres.TestCases.TC004_PUT_Userdetail@3ad394e6]" started-at="2023-11-24T16:21:48 IST" name="checkStatusLine" description="Validating the StatusLine" finished-at="2023-11-24T16:21:48 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatusLine -->
-        <test-method signature="checkContentType()[pri:4, instance:com.reqres.TestCases.TC004_PUT_Userdetail@3ad394e6]" started-at="2023-11-24T16:21:48 IST" name="checkContentType" description="Validating the ContentType" finished-at="2023-11-24T16:21:48 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkContentType -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.reqres.TestCases.TC004_PUT_Userdetail@3ad394e6]" started-at="2023-11-24T16:21:48 IST" name="teardown" finished-at="2023-11-24T16:21:48 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.reqres.TestCases.TC004_PUT_Userdetail -->
-      <class name="com.reqres.TestCases.Authentication">
-        <test-method signature="login()[pri:0, instance:com.reqres.TestCases.Authentication@6ca320ab]" started-at="2023-11-24T16:21:50 IST" name="login" finished-at="2023-11-24T16:21:52 IST" duration-ms="1612" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- com.reqres.TestCases.Authentication -->
-      <class name="com.reqres.TestCases.TC001_GET_AllUsers">
-        <test-method is-config="true" signature="getAllUsersData()[pri:0, instance:com.reqres.TestCases.TC001_GET_AllUsers@51b01960]" started-at="2023-11-24T16:21:47 IST" name="getAllUsersData" finished-at="2023-11-24T16:21:47 IST" duration-ms="244" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAllUsersData -->
-        <test-method signature="checkResponseBody()[pri:1, instance:com.reqres.TestCases.TC001_GET_AllUsers@51b01960]" started-at="2023-11-24T16:21:47 IST" name="checkResponseBody" description="Validating the ResponseBody" finished-at="2023-11-24T16:21:47 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkResponseBody -->
-        <test-method signature="checkStatusCode()[pri:2, instance:com.reqres.TestCases.TC001_GET_AllUsers@51b01960]" started-at="2023-11-24T16:21:47 IST" name="checkStatusCode" description="Validating the StatusCode" finished-at="2023-11-24T16:21:47 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatusCode -->
-        <test-method signature="checkStatusLine()[pri:3, instance:com.reqres.TestCases.TC001_GET_AllUsers@51b01960]" started-at="2023-11-24T16:21:47 IST" name="checkStatusLine" description="Validating the StatusLine" finished-at="2023-11-24T16:21:47 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatusLine -->
-        <test-method signature="checkResponseTime()[pri:4, instance:com.reqres.TestCases.TC001_GET_AllUsers@51b01960]" started-at="2023-11-24T16:21:47 IST" name="checkResponseTime" description="Validating the ResponseTime" finished-at="2023-11-24T16:21:47 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkResponseTime -->
-        <test-method signature="checkContentType()[pri:5, instance:com.reqres.TestCases.TC001_GET_AllUsers@51b01960]" started-at="2023-11-24T16:21:47 IST" name="checkContentType" description="Validating the ContentType" finished-at="2023-11-24T16:21:47 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkContentType -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.reqres.TestCases.TC001_GET_AllUsers@51b01960]" started-at="2023-11-24T16:21:47 IST" name="teardown" finished-at="2023-11-24T16:21:47 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.reqres.TestCases.TC001_GET_AllUsers -->
-    </test> <!-- ReqresRestAPISuite -->
-  </suite> <!-- ReqresRestAPISuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

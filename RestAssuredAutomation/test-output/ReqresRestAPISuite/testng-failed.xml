@@ -6,61 +6,20 @@
   </listeners>
   <test thread-count="5" name="ReqresRestAPISuite(failed)">
     <classes>
-      <class name="com.reqres.TestCases.TC001_GET_AllUsers">
-        <methods>
-          <include name="teardown"/>
-          <include name="checkStatusLine"/>
-          <include name="getAllUsersData"/>
-          <include name="checkContentType"/>
-          <include name="checkResponseTime"/>
-          <include name="checkStatusCode"/>
-          <include name="setup"/>
-          <include name="checkResponseBody"/>
-        </methods>
-      </class> <!-- com.reqres.TestCases.TC001_GET_AllUsers -->
-      <class name="com.reqres.TestCases.TC002_GET_SingleUser">
-        <methods>
-          <include name="checkContentType"/>
-          <include name="checkStatusLine"/>
-          <include name="teardown"/>
-          <include name="checkResponseBody"/>
-          <include name="getSingleUsersData"/>
-          <include name="checkStatusCode"/>
-          <include name="setup"/>
-          <include name="checkResponseTime"/>
-        </methods>
-      </class> <!-- com.reqres.TestCases.TC002_GET_SingleUser -->
-      <class name="com.reqres.TestCases.TC005_DELETE_Userdetail">
-        <methods>
-          <include name="checkStatusLine"/>
-          <include name="teardown"/>
-          <include name="validateResponseBody"/>
-          <include name="checkStatusCode"/>
-          <include name="deleteUserDetail"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.reqres.TestCases.TC005_DELETE_Userdetail -->
       <class name="com.reqres.TestCases.TC003_POST_Userdetail">
         <methods>
           <include name="checkResponseBody"/>
           <include name="teardown"/>
-          <include name="validateResponseBody"/>
           <include name="addNewUser"/>
-          <include name="checkStatusCode"/>
-          <include name="checkContentType"/>
-          <include name="checkStatusLine"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.reqres.TestCases.TC003_POST_Userdetail -->
       <class name="com.reqres.TestCases.TC004_PUT_Userdetail">
         <methods>
-          <include name="checkStatusLine"/>
           <include name="teardown"/>
-          <include name="checkContentType"/>
-          <include name="checkStatusCode"/>
           <include name="updateUserDetail"/>
-          <include name="setup"/>
           <include name="checkResponseBody"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- com.reqres.TestCases.TC004_PUT_Userdetail -->
     </classes>

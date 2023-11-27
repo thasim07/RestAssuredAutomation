@@ -3,6 +3,8 @@ package com.reqres.TestCases;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.endpoints.Endpoints;
 import com.reqres.Base.BaseClass;
 
 import io.restassured.path.json.JsonPath;
@@ -14,14 +16,14 @@ public class TC005_DELETE_Userdetail extends BaseClass{
 
 		setBaseURI();
 		includeHeader("Authorization","Bearer "+prop.getProperty("Accesstoken"));
-		response=requestType("GET",prop.getProperty("userpath"));
+		response=requestType("GET",Endpoints.getUsers);
 
 		//By using JsonPath, i am getting the first employee and deleting that user data
 
 		JsonPath jsonPathEvaluater = response.jsonPath();
 
 		String empID = jsonPathEvaluater.get("[0].id");
-		response=requestType("DELETE",prop.getProperty("deleteuser")+empID);
+		response=requestType("DELETE",Endpoints.deleteuser +empID);
 
 	}
 

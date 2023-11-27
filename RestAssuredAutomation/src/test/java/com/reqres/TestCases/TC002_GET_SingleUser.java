@@ -4,6 +4,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.endpoints.Endpoints;
 import com.reqres.Base.BaseClass;
 
 public class TC002_GET_SingleUser extends BaseClass{
@@ -14,7 +15,7 @@ public class TC002_GET_SingleUser extends BaseClass{
 	public void getSingleUsersData() throws InterruptedException {
 		logger.info("**********************TC001_GET_SingleUser**********************************");
 		setBaseURI();
-		response=requestType("GET",prop.getProperty("getuser"));	
+		response=requestType("GET",Endpoints.getUser);	
 
 	}
 

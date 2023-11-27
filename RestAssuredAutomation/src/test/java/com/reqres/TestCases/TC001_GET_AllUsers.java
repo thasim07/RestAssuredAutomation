@@ -3,7 +3,10 @@ package com.reqres.TestCases;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.endpoints.Endpoints;
 import com.reqres.Base.BaseClass;
+
 
 public class TC001_GET_AllUsers extends BaseClass{
 
@@ -12,7 +15,8 @@ public class TC001_GET_AllUsers extends BaseClass{
 	public static void getAllUsersData() throws InterruptedException {
 		logger.info("**********************TC001_GET_AllUsers**********************************");
 		setBaseURI();
-		response=requestType("GET",prop.getProperty("userpath"));		
+		response=requestType("GET",Endpoints.getUsers);	
+		
 	}
 
 	@Test(priority=1,description = "Validating the ResponseBody")

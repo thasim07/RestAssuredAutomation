@@ -11,6 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 
 import io.restassured.RestAssured;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -63,7 +64,6 @@ public class BaseClass {
 	public static void baseAuth(String username, String password) {
 
 		try {
-			RestAssured.baseURI = prop.getProperty("baseURI");
 			httpRequest=RestAssured.given().auth().preemptive().basic(username, password);
 		} catch (Exception e) {
 			e.printStackTrace();

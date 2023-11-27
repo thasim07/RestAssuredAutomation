@@ -5,13 +5,16 @@ import org.json.JSONObject;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.endpoints.Endpoints;
 import com.reqres.Base.BaseClass;
-import com.reqres.utils.RestUtils;
+import com.reqres.utils.RandomService;
+
 
 public class TC003_POST_Userdetail extends BaseClass{
 
-	String username=RestUtils.empName();
-	String userjob=RestUtils.empJob();
+	String username=RandomService.getRandomEmpName();
+	String userjob=RandomService.getRandomEmpJob();
 
 	@BeforeClass
 	public void addNewUser() throws InterruptedException {
@@ -24,8 +27,8 @@ public class TC003_POST_Userdetail extends BaseClass{
 
 		includeHeader("Authorization","Bearer "+prop.getProperty("Accesstoken"));
 		includeHeader("Content-Type","application/json");
-		httpRequest.body(requestParam.toString());
-		response=requestType("POST",prop.getProperty("userpath"));
+		httpRequest.body(requestParam.toMap());
+		response=requestType("POST",Endpoints.getUsers);
 		
 	}
 
