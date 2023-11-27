@@ -3,7 +3,6 @@ package com.reqres.TestCases;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import com.endpoints.Endpoints;
 import com.reqres.Base.BaseClass;
 
