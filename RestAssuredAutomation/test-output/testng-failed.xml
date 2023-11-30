@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.reqres.TestCases.Authentication">
+      <class name="com.reqres.TestCases.TC001_GET_AllUsers">
         <methods>
-          <include name="BearerTokenGithubRepo"/>
+          <include name="teardown"/>
+          <include name="getAllUsersData"/>
           <include name="setup"/>
+          <include name="checkResponseBody"/>
         </methods>
-      </class> <!-- com.reqres.TestCases.Authentication -->
+      </class> <!-- com.reqres.TestCases.TC001_GET_AllUsers -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

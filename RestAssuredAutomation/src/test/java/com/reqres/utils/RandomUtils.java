@@ -8,8 +8,6 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 public final class RandomUtils {
 	
-//	private RandomUtils(){}
-	
 	
 	public static String generateRandomString(int numberofdigits) {
 		return RandomStringUtils.randomAlphabetic(numberofdigits);

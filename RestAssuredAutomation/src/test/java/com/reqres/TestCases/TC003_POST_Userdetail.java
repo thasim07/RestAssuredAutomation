@@ -11,6 +11,7 @@ import com.reqres.Base.BaseClass;
 import com.reqres.utils.RandomService;
 
 
+
 public class TC003_POST_Userdetail extends BaseClass{
 
 	String username=RandomService.getRandomEmpName();

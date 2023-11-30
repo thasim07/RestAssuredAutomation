@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-27T22:24:36 IST" name="Default suite" finished-at="2023-11-27T22:24:41 IST" duration-ms="4747">
+  <suite started-at="2023-11-30T12:27:38 IST" name="Default suite" finished-at="2023-11-30T12:27:43 IST" duration-ms="4492">
     <groups>
     </groups>
-    <test started-at="2023-11-27T22:24:36 IST" name="Default test" finished-at="2023-11-27T22:24:41 IST" duration-ms="4747">
+    <test started-at="2023-11-30T12:27:38 IST" name="Default test" finished-at="2023-11-30T12:27:43 IST" duration-ms="4492">
       <class name="com.reqres.TestCases.Authentication">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.reqres.TestCases.Authentication@610db97e]" started-at="2023-11-27T22:24:36 IST" name="setup" finished-at="2023-11-27T22:24:36 IST" duration-ms="80" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.reqres.TestCases.Authentication@610db97e]" started-at="2023-11-30T12:27:38 IST" name="setup" finished-at="2023-11-30T12:27:38 IST" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="BasicAuth()[pri:0, instance:com.reqres.TestCases.Authentication@610db97e]" started-at="2023-11-27T22:24:36 IST" name="BasicAuth" description="Basic Authentication" finished-at="2023-11-27T22:24:40 IST" duration-ms="3929" status="PASS">
+        <test-method signature="BasicAuth()[pri:0, instance:com.reqres.TestCases.Authentication@610db97e]" started-at="2023-11-30T12:27:39 IST" name="BasicAuth" description="Basic Authentication" finished-at="2023-11-30T12:27:42 IST" duration-ms="3654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasicAuth -->
-        <test-method signature="BearerTokenGithubRepo()[pri:0, instance:com.reqres.TestCases.Authentication@610db97e]" started-at="2023-11-27T22:24:40 IST" name="BearerTokenGithubRepo" description="Bearer token" finished-at="2023-11-27T22:24:41 IST" duration-ms="674" status="PASS">
+        <test-method signature="BearerTokenGithubRepo()[pri:0, instance:com.reqres.TestCases.Authentication@610db97e]" started-at="2023-11-30T12:27:42 IST" name="BearerTokenGithubRepo" description="Bearer token" finished-at="2023-11-30T12:27:43 IST" duration-ms="731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BearerTokenGithubRepo -->
